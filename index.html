@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genome Sequence Aligner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Genome Sequence Aligner</h1>
+      <p>Tune decimal scoring parameters and compare DNA, RNA, protein, SARS, and COVID sequence alignments.</p>
+    </div>
+    <button id="runButton" class="primary-button" type="button">Run alignment</button>
+  </header>
+
+  <main class="layout">
+    <section class="panel controls-panel" aria-label="Alignment controls">
+      <div class="field">
+        <label for="preset">Preset</label>
+        <select id="preset">
+          <option value="toyDeletion">Toy DNA: one deletion</option>
+          <option value="gapTrap">Toy DNA: scattered-gap trap</option>
+          <option value="proteinToy">Toy protein</option>
+          <option value="sarsCov2Spike">SARS-CoV-2: spike segment</option>
+          <option value="sarsVsCovid">SARS vs. COVID comparison</option>
+          <option value="covidVsFlu">COVID vs. influenza-style RNA</option>
+          <option value="bacteriaResistance">Bacteria: resistance gene</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+
+      <p id="presetNote" class="note"></p>
+
+      <div class="field">
+        <label for="seqA">Sequence A</label>
+        <textarea id="seqA" spellcheck="false"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="seqB">Sequence B</label>
+        <textarea id="seqB" spellcheck="false"></textarea>
+      </div>
+
+      <div class="split">
+        <div class="field">
+          <label for="mode">Alignment type</label>
+          <select id="mode">
+            <option value="global">Global</option>
+            <option value="local">Local</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="seqType">Sequence type</label>
+          <select id="seqType">
+            <option value="DNA">DNA</option>
+            <option value="Protein">Protein</option>
+            <option value="RNA">RNA</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sliders">
+        <label>
+          Match reward <output id="matchOut">2</output>
+          <input id="match" type="range" min="-5" max="10" step="0.1" value="2">
+        </label>
+        <label>
+          Mismatch penalty <output id="mismatchOut">-1</output>
+          <input id="mismatch" type="range" min="-10" max="5" step="0.1" value="-1">
+        </label>
+        <label>
+          Gap penalty <output id="gapOut">-2</output>
+          <input id="gap" type="range" min="-15" max="0" step="0.1" value="-2">
+        </label>
+      </div>
+
+      <div class="button-row">
+        <button id="goodButton" type="button">Sensible scoring</button>
+        <button id="badButton" type="button">Silly scoring</button>
+      </div>
+    </section>
+
+    <section class="results" aria-live="polite">
+      <div class="stats-grid">
+        <div class="stat"><span>Score</span><strong id="score">-</strong></div>
+        <div class="stat"><span>Identity</span><strong id="identity">-</strong></div>
+        <div class="stat"><span>Mismatches</span><strong id="mismatches">-</strong></div>
+        <div class="stat"><span>Gaps</span><strong id="gaps">-</strong></div>
+        <div class="stat"><span>Match type</span><strong id="quality">-</strong></div>
+      </div>
+
+      <div id="message" class="message"></div>
+
+      <div class="legend" aria-label="Color key">
+        <span><i class="match"></i> Match</span>
+        <span><i class="mismatch"></i> Mismatch</span>
+        <span><i class="gap"></i> Gap</span>
+      </div>
+
+      <div id="alignment" class="alignment" aria-label="Alignment output"></div>
+
+      <section class="writeup">
+        <h2>Biology Check</h2>
+        <p>A good alignment should place homologous positions together, use gaps in plausible insertion/deletion regions, and avoid scattered gaps that only appear because the scoring made them cheap. RNA examples use U instead of T.</p>
+        <p>The score is useful, but it is not absolute truth. Change the scoring and the score changes. Judge quality with biology too: percent identity, gap placement, conserved regions, and whether DNA changes actually change the protein.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
