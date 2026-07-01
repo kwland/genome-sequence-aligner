@@ -40,7 +40,13 @@ const presets = {
     a: "ATGAAACGCCTGATTGACGATCTGACCGTAACTGACCTGATCGATGCCGTTACCGATCTGAACTGA",
     b: "ATGAAACGCCTGATTGATGATCTGACCGTAACTGACCTAATCGATGCCGTTACCGTTCTGAACTGA",
     note: "A simplified bacterial gene segment with substitutions that could affect a coded protein."
-  },
+  },,
+  scoringTrap: {
+    type: "DNA",
+    a: "ACGTTGACCTGAA",
+    b: "ACGTCGACCAGAA",
+    note: "Good scoring treats two positions as mutations. Bad scoring can hide those mismatches by inserting unnecessary gaps."
+  }
   custom: {
     type: "DNA",
     a: "",
