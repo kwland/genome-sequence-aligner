@@ -27,7 +27,6 @@
           <option value="sarsVsCovid">SARS vs. COVID comparison</option>
           <option value="covidVsFlu">COVID vs. influenza-style RNA</option>
           <option value="bacteriaResistance">Bacteria: resistance gene</option>
-          <option value="scoringTrap">Scoring trap: mismatches vs gaps</option>
           <option value="custom">Custom</option>
         </select>
       </div>
@@ -106,8 +105,6 @@
         <h2>Biology Check</h2>
         <p>A good alignment should place homologous positions together, use gaps in plausible insertion/deletion regions, and avoid scattered gaps that only appear because the scoring made them cheap. RNA examples use U instead of T.</p>
         <p>The score is useful, but it is not absolute truth. Change the scoring and the score changes. Judge quality with biology too: percent identity, gap placement, conserved regions, and whether DNA changes actually change the protein.</p>
-        <h2>Good vs. Bad Scoring Argument</h2>
-        <p>A good alignment is not automatically the one with the highest score, because the score depends on the scoring rules. In a sensible scoring system, matches are rewarded, mismatches are penalized, and gaps are also penalized because insertions and deletions are biologically possible but should not be added too easily. In the bad scoring setup, the gap penalty is zero, so the algorithm can insert gaps for free and make mismatches disappear. That can make the alignment look cleaner mathematically, but it is biologically less believable. The better alignment is the one that balances score with biology: homologous positions should line up, conserved regions should stay together, mismatches should be accepted when they likely represent mutations, and gaps should only appear when they make biological sense.</p>
       </section>
     </section>
   </main>
