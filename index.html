@@ -105,6 +105,11 @@
         <h2>Biology Check</h2>
         <p>A good alignment should place homologous positions together, use gaps in plausible insertion/deletion regions, and avoid scattered gaps that only appear because the scoring made them cheap. RNA examples use U instead of T.</p>
         <p>The score is useful, but it is not absolute truth. Change the scoring and the score changes. Judge quality with biology too: percent identity, gap placement, conserved regions, and whether DNA changes actually change the protein.</p>
+        <h2>Conclusions</h2>
+        <p>The “right” alignment is not always just the one with the highest score. The score depends on the rules chosen for matches, mismatches, and gaps, so changing the scoring system can change what the website decides is the best alignment.</p>
+        <p>A good alignment should make biological sense. It should line up bases or amino acids that are likely related, show a high percent identity when the sequences are actually similar, and use gaps only when they seem reasonable. Gaps can represent insertions or deletions, but if the scoring makes gaps too cheap, the website may add too many gaps just to force more matches. That can create an alignment that looks good mathematically but is biologically unrealistic.</p>
+        <p>Using the website, the sensible scoring option is better because it rewards matches, penalizes mismatches, and also penalizes gaps. This makes the alignment more realistic because it does not let the program insert gaps for free. The silly scoring option can make bad alignments because the gap penalty is too low or zero, so the program may scatter gaps across the sequence to improve the score.</p>
+        <p>So the best alignment is the one that balances the score with biological evidence. A good alignment should have strong percent identity, fewer unnecessary gaps, mismatches that are explainable as mutations, and conserved regions that stay lined up. The score helps choose an alignment, but biology helps decide whether that alignment is actually believable.</p>
       </section>
     </section>
   </main>
