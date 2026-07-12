@@ -1,133 +1,240 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Genome Sequence Aligner</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Battleship Tournament AI — 20k Particle Hybrid</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <h1>Genome Sequence Aligner</h1>
-      <p>Tune decimal scoring parameters and compare DNA, RNA, protein, SARS, and COVID sequence alignments.</p>
+<header>
+  <h1>Battleship Tournament AI — 20k Particles</h1>
+  <p class="subtitle">
+    Compare five Battleship opponents on an 8&times;12 board, including a
+    20,000-particle course-format hybrid and research-inspired POMCP. Place your fleet, inspect each
+    AI's live heatmap, and run a fair shared-layout benchmark.
+  </p>
+</header>
+
+<main>
+
+  <!-- ============ SETUP PHASE ============ -->
+  <section id="setup-section" class="setup">
+    <h2>Place Your Fleet</h2>
+    <p class="setup-hint">
+      Pick a ship below, then click a cell on the board to place it. Click a
+      placed ship (in the list or on the board) to pick it back up. Press
+      <kbd>R</kbd> or the rotate button to change orientation.
+    </p>
+
+    <div class="setup-layout">
+      <div class="board-panel">
+        <div class="board-wrapper">
+          <div id="setup-board" class="board"></div>
+          <div id="setup-ship-layer" class="ship-layer"></div>
+        </div>
+      </div>
+
+      <div class="fleet-panel">
+        <ul id="fleet-list" class="fleet-list"></ul>
+        <div class="setup-actions">
+          <button id="rotate-ship" type="button">⟳ Rotate</button>
+          <button id="smart-place" type="button">Auto-Place (Maximin)</button>
+          <button id="clear-placement" type="button">Clear All</button>
+        </div>
+        <label class="placement-select-label">
+          Enemy placement policy
+          <select id="placement-strategy">
+            <option value="adversarial" selected>Adversarial maximin (strongest)</option>
+            <option value="uniform">Uniform elite pool</option>
+            <option value="live">Legacy live search</option>
+            <option value="random">Random placement</option>
+          </select>
+        </label>
+        <button id="start-battle" type="button" class="primary" disabled>Start Battle</button>
+        <button id="reset-placement-memory" type="button" class="secondary">Reset placement learning</button>
+        <span id="placement-memory-status" class="hint" aria-live="polite"></span>
+      </div>
     </div>
-    <button id="runButton" class="primary-button" type="button">Run alignment</button>
-  </header>
+  </section>
 
-  <main class="layout">
-    <section class="panel controls-panel" aria-label="Alignment controls">
-      <div class="field">
-        <label for="preset">Preset</label>
-        <select id="preset">
-          <option value="toyDeletion">Toy DNA: one deletion</option>
-          <option value="gapTrap">Toy DNA: scattered-gap trap</option>
-          <option value="proteinToy">Toy protein</option>
-          <option value="sarsCov2Spike">SARS-CoV-2: spike segment</option>
-          <option value="sarsVsCovid">SARS vs. COVID comparison</option>
-          <option value="covidVsFlu">COVID vs. influenza-style RNA</option>
-          <option value="bacteriaResistance">Bacteria: resistance gene</option>
-          <option value="custom">Custom</option>
+  <!-- ============ BATTLE PHASE ============ -->
+  <section id="battle-section" class="battle" hidden>
+    <section class="controls">
+      <button id="new-game">New Game</button>
+      <div class="opponent-picker">
+        <span class="picker-label">Opponent:</span>
+        <input id="difficulty" type="hidden" value="hybrid" />
+        <div class="ai-tabs" role="tablist" aria-label="Choose AI opponent">
+          <button type="button" class="ai-tab active" data-ai-value="hybrid" role="tab" aria-selected="true">Course Hybrid 20k</button>
+          <button type="button" class="ai-tab" data-ai-value="pomcp" role="tab" aria-selected="false">POMCP</button>
+          <button type="button" class="ai-tab" data-ai-value="bayesian" role="tab" aria-selected="false">Bayesian</button>
+          <button type="button" class="ai-tab" data-ai-value="probability" role="tab" aria-selected="false">Probability</button>
+          <button type="button" class="ai-tab" data-ai-value="random" role="tab" aria-selected="false">Random</button>
+        </div>
+      </div>
+      <label class="checkbox-label">
+        <input type="checkbox" id="heatmap-toggle" checked />
+        Show AI heatmap on your board
+      </label>
+    </section>
+
+    <p id="status" class="status">Your move — fire on the enemy waters.</p>
+
+    <section class="boards">
+      <div class="board-panel">
+        <h2>Your Fleet <span class="hint">(AI fires here)</span></h2>
+        <div class="board-wrapper">
+          <div id="player-ship-layer" class="ship-layer"></div>
+          <div id="player-board" class="board"></div>
+        </div>
+        <p class="stat-line">Shots taken by AI: <strong id="shots-ai">0</strong> &middot; Ships afloat: <strong id="ships-player">5</strong></p>
+      </div>
+
+      <div class="board-panel">
+        <h2>Enemy Fleet <span class="hint">(click to fire)</span></h2>
+        <div class="board-wrapper">
+          <div id="enemy-ship-layer" class="ship-layer"></div>
+          <div id="enemy-board" class="board"></div>
+        </div>
+        <p class="stat-line">Shots taken by you: <strong id="shots-player">0</strong> &middot; Ships afloat: <strong id="ships-enemy">5</strong></p>
+      </div>
+    </section>
+
+    <section class="legend">
+      <span><i class="swatch unknown"></i> Unknown</span>
+      <span><i class="swatch ship"></i> Ship</span>
+      <span><i class="swatch hit"></i> Hit</span>
+      <span><i class="swatch sunk"></i> Sunk</span>
+      <span><i class="swatch miss"></i> Miss</span>
+      <span><i class="swatch heat"></i> AI's target likelihood</span>
+    </section>
+  </section>
+
+  <section class="benchmark">
+    <h2>Five-algorithm benchmark (official 8×12 board)</h2>
+    <p>
+      Runs Random, Probability, Bayesian, POMCP, and the course-format 20k Hybrid attackers against the same
+      sequence of random fleets. The planning AIs use reduced search budgets here so a
+      100&ndash;200 game test remains practical in the browser. Fewer shots is better.
+    </p>
+    <div class="benchmark-tabs" aria-label="Algorithms included in benchmark">
+      <span>Random</span><span>Probability</span><span>Bayesian</span><span>POMCP</span><span class="active">Course Hybrid</span>
+    </div>
+    <p id="hybrid-model-status" class="model-status">Course Hybrid configuration loading...</p>
+    <div class="bench-controls">
+      <label>
+        Games per algorithm:
+        <input type="number" id="bench-n" value="100" min="100" max="200" />
+      </label>
+      <button id="bench-run">Run 5-way benchmark</button>
+    </div>
+    <div id="bench-output" class="bench-output"></div>
+  </section>
+
+  <section class="benchmark">
+    <h2>Placement-defense benchmark</h2>
+    <p>
+      Compares random placement, uniform sampling from the elite pool, and the
+      weighted adversarial maximin policy. Every result is the number of shots
+      the selected attacker needed to sink the fleet, so <strong>higher is better</strong>.
+    </p>
+    <div class="bench-controls">
+      <label>
+        Games per placement policy:
+        <input type="number" id="placement-bench-n" value="100" min="100" max="200" />
+      </label>
+      <label>
+        Attacker:
+        <select id="placement-bench-attacker">
+          <option value="hybrid" selected>Hybrid benchmark mode</option>
+          <option value="pomcp">POMCP benchmark mode</option>
+          <option value="bayesian">Bayesian benchmark mode</option>
+          <option value="probability">Probability AI</option>
         </select>
-      </div>
+      </label>
+      <button id="placement-bench-run">Run placement benchmark</button>
+    </div>
+    <div id="placement-bench-output" class="bench-output"></div>
+  </section>
 
-      <p id="presetNote" class="note"></p>
+  <section class="about">
+    <h2>How it works</h2>
+    <p>
+      <strong>Course Hybrid AI (default, 20,000-particle ceiling).</strong>
+      This mirrors the Python tournament submission on the official 8×12 board
+      and 5/4/3/2/2 fleet. It maintains complete legal fleet hypotheses,
+      filters them using only HIT/MISS/UNKNOWN board state, scores occupancy
+      and partially hit ships, and applies a shallow two-shot lookahead. It
+      intentionally ignores the website's sunk-ship announcement because the
+      official starter does not provide one. The playable opponent uses the
+      full particle ceiling; the 100–200-game benchmark uses a smaller,
+      clearly labeled population so it finishes in a reasonable time.
+    </p>
+    <p>
+      <strong>POMCP AI (research planner).</strong> This is a strong
+      practical approximation, not a proof of optimal play. It treats Battleship
+      as a partially observable planning problem. It maintains a particle
+      belief over complete legal fleets, samples a possible hidden fleet for
+      each simulation, then uses an online PUCT/Monte-Carlo tree search over
+      future shot and observation branches. Unlike a purely greedy heatmap,
+      it can prefer a shot because the hit/miss result improves later choices.
+      Exact sunk-ship announcements are included as legal observations.
+    </p>
+    <p>
+      <strong>Bayesian AI.</strong> Maintains a
+      persistent population of thousands of "particles" &mdash; complete,
+      internally consistent guesses at the whole fleet's layout &mdash;
+      across the entire game, filtering (not rebuilding) it after every
+      shot. A particle survives a miss only if none of its ships are there,
+      and survives a hit only if one of its ships is. Cells are scored from
+      what fraction of surviving particles agree on them, split into two
+      questions: <em>is anything here at all</em> (occupancy), and
+      <em>does a ship we've already found but not finished continue into
+      here</em> (active-ship / sink probability). Once any hits are on the
+      board, the second question dominates the score, so it finishes ships
+      it's found before hunting new ones. Retaining each particle's
+      individual ship identities &mdash; instead of collapsing a particle
+      into a single "occupied cells" set &mdash; is what lets it reason
+      correctly when two ships happen to be placed touching each other: it
+      never has to decide which specific ship a run of hits belongs to,
+      since every consistent interpretation stays alive in the population
+      until later shots naturally rule the wrong ones out.
+    </p>
+    <p>
+      <strong>Probability AI (heuristic).</strong> A much faster
+      approximation: for every ship length in the fleet, it enumerates
+      every placement still consistent with the board and tallies how many
+      valid placements cover each cell, independently per ship length. A
+      placement only counts toward "finishing a found ship" if it still has
+      an unknown cell to give (not if it's already fully revealed) &mdash;
+      good enough to avoid wasting shots on a fully-explained run, but
+      unlike the Bayesian AI it scores each ship length in isolation, so it
+      can't fully rule out an option that looks locally plausible but is
+      actually impossible once the rest of the board is taken into account.
+    </p>
+    <p>
+      <strong>Ship placement.</strong> A single fixed board is never the best
+      repeat-game defense because it can be memorized. The default placement
+      policy therefore samples from a weighted mixed strategy generated
+      offline. The optimizer evolves thousands of legal layouts, evaluates
+      finalists against seeded POMCP, Bayesian, Probability, and human-style
+      hunt/target policies, and solves a finite zero-sum maximin linear program.
+      It also constrains the pool's aggregate cell occupancy so no small group
+      of coordinates becomes an obvious opening target. Between games, the
+      browser may softly tilt those maximin weights away from cells the player
+      tends to fire at early, while retaining random exploration and avoiding
+      recently used layouts. The placement benchmark compares this strategy
+      directly with random and uniformly sampled elite fleets.
+    </p>
+  </section>
+</main>
 
-      <div class="field">
-        <label for="seqA">Sequence A</label>
-        <textarea id="seqA" spellcheck="false"></textarea>
-      </div>
+<footer>
+  <p>Static, client-side JS &mdash; no backend. See <code>ai.js</code> for the AI implementation.</p>
+</footer>
 
-      <div class="field">
-        <label for="seqB">Sequence B</label>
-        <textarea id="seqB" spellcheck="false"></textarea>
-      </div>
-
-      <div class="split">
-        <div class="field">
-          <label for="mode">Alignment type</label>
-          <select id="mode">
-            <option value="global">Global</option>
-            <option value="local">Local</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="seqType">Sequence type</label>
-          <select id="seqType">
-            <option value="DNA">DNA</option>
-            <option value="Protein">Protein</option>
-            <option value="RNA">RNA</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="sliders">
-        <label>
-          Match reward <output id="matchOut">2</output>
-          <input id="match" type="range" min="-5" max="10" step="0.1" value="2">
-        </label>
-        <label>
-          Mismatch penalty <output id="mismatchOut">-1</output>
-          <input id="mismatch" type="range" min="-10" max="5" step="0.1" value="-1">
-        </label>
-        <label>
-          Gap penalty <output id="gapOut">-2</output>
-          <input id="gap" type="range" min="-15" max="0" step="0.1" value="-2">
-        </label>
-      </div>
-
-      <div class="button-row">
-        <button id="goodButton" type="button">Sensible scoring</button>
-        <button id="badButton" type="button">Silly scoring</button>
-      </div>
-    </section>
-
-    <section class="results" aria-live="polite">
-      <div class="stats-grid">
-        <div class="stat"><span>Score</span><strong id="score">-</strong></div>
-        <div class="stat"><span>Identity</span><strong id="identity">-</strong></div>
-        <div class="stat"><span>Mismatches</span><strong id="mismatches">-</strong></div>
-        <div class="stat"><span>Gaps</span><strong id="gaps">-</strong></div>
-        <div class="stat"><span>Match type</span><strong id="quality">-</strong></div>
-      </div>
-
-      <div id="message" class="message"></div>
-
-      <div class="legend" aria-label="Color key">
-        <span><i class="match"></i> Match</span>
-        <span><i class="mismatch"></i> Mismatch</span>
-        <span><i class="gap"></i> Gap</span>
-      </div>
-
-      <div id="alignment" class="alignment" aria-label="Alignment output"></div>
-
-      <section class="writeup">
-        <h2>Biology Check</h2>
-        <p>A good alignment should place homologous positions together, use gaps in plausible insertion/deletion regions, and avoid scattered gaps that only appear because the scoring made them cheap. RNA examples use U instead of T.</p>
-        <p>The score is useful, but it is not absolute truth. Change the scoring and the score changes. Judge quality with biology too: percent identity, gap placement, conserved regions, and whether DNA changes actually change the protein.</p>
-        <h2>Conclusions</h2>
-        <p>The “right” alignment is not always just the one with the highest score. The score depends on the rules chosen for matches, mismatches, and gaps, so changing the scoring system can change what the website decides is the best alignment.</p>
-        <p>A good alignment should make biological sense. It should line up bases or amino acids that are likely related, show a high percent identity when the sequences are actually similar, and use gaps only when they seem reasonable. Gaps can represent insertions or deletions, but if the scoring makes gaps too cheap, the website may add too many gaps just to force more matches. That can create an alignment that looks good mathematically but is biologically unrealistic.</p>
-        <p>Using the website, the sensible scoring option is better because it rewards matches, penalizes mismatches, and also penalizes gaps. This makes the alignment more realistic because it does not let the program insert gaps for free. The silly scoring option can make bad alignments because the gap penalty is too low or zero, so the program may scatter gaps across the sequence to improve the score.</p>
-        <p>So the best alignment is the one that balances the score with biological evidence. A good alignment should have strong percent identity, fewer unnecessary gaps, mismatches that are explainable as mutations, and conserved regions that stay lined up. The score helps choose an alignment, but biology helps decide whether that alignment is actually believable.</p>
-        <section class="screenshot-comparison" aria-label="Good and bad alignment screenshots">
-        <h2>Screenshot Comparison</h2>
-        <div class="screenshot-grid">
-          <figure class="screenshot-card">
-            <img src="good-alignment.png" alt="Good alignment screenshot using sensible scoring">
-            <figcaption><strong>Good alignment</strong>Sensible scoring keeps the sequences lined up with high identity and no unnecessary gaps.</figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <img src="bad-alignment.png" alt="Bad alignment screenshot using silly scoring">
-            <figcaption><strong>Bad alignment</strong>Silly scoring makes gaps free, so the alignment adds extra gaps even though it is less biologically realistic.</figcaption>
-          </figure>
-        </div>
-</section>
-      </section>
-      
-    </section>
-  </main>
-
-  <script src="app.js"></script>
+<script src="ai.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

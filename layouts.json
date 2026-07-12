@@ -1,0 +1,5639 @@
+{
+  "schema": 2,
+  "board": {
+    "rows": 8,
+    "cols": 12
+  },
+  "fleet": [
+    5,
+    4,
+    3,
+    2,
+    2
+  ],
+  "generated": "2026-07-12",
+  "method": "course 8x12 optimized mixed pool + reflections",
+  "mode": "course-ready",
+  "count": 144,
+  "target_cell_occupancy": 0.16666666666666666,
+  "occupancy": null,
+  "maximin_value": null,
+  "layouts": [
+    {
+      "id": "course-001",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          8,
+          5,
+          "V"
+        ],
+        [
+          7,
+          5,
+          4,
+          "H"
+        ],
+        [
+          1,
+          0,
+          3,
+          "V"
+        ],
+        [
+          0,
+          6,
+          2,
+          "H"
+        ],
+        [
+          5,
+          2,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-002",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          3,
+          5,
+          "V"
+        ],
+        [
+          7,
+          3,
+          4,
+          "H"
+        ],
+        [
+          1,
+          11,
+          3,
+          "V"
+        ],
+        [
+          0,
+          4,
+          2,
+          "H"
+        ],
+        [
+          5,
+          9,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-003",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          8,
+          5,
+          "V"
+        ],
+        [
+          0,
+          5,
+          4,
+          "H"
+        ],
+        [
+          4,
+          0,
+          3,
+          "V"
+        ],
+        [
+          7,
+          6,
+          2,
+          "H"
+        ],
+        [
+          1,
+          2,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-004",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          3,
+          5,
+          "V"
+        ],
+        [
+          0,
+          3,
+          4,
+          "H"
+        ],
+        [
+          4,
+          11,
+          3,
+          "V"
+        ],
+        [
+          7,
+          4,
+          2,
+          "H"
+        ],
+        [
+          1,
+          9,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-005",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          1,
+          5,
+          "H"
+        ],
+        [
+          0,
+          2,
+          4,
+          "H"
+        ],
+        [
+          6,
+          3,
+          3,
+          "H"
+        ],
+        [
+          6,
+          0,
+          2,
+          "V"
+        ],
+        [
+          4,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-006",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          6,
+          5,
+          "H"
+        ],
+        [
+          0,
+          6,
+          4,
+          "H"
+        ],
+        [
+          6,
+          6,
+          3,
+          "H"
+        ],
+        [
+          6,
+          11,
+          2,
+          "V"
+        ],
+        [
+          4,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-007",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          1,
+          5,
+          "H"
+        ],
+        [
+          7,
+          2,
+          4,
+          "H"
+        ],
+        [
+          1,
+          3,
+          3,
+          "H"
+        ],
+        [
+          0,
+          0,
+          2,
+          "V"
+        ],
+        [
+          3,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-008",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          6,
+          5,
+          "H"
+        ],
+        [
+          7,
+          6,
+          4,
+          "H"
+        ],
+        [
+          1,
+          6,
+          3,
+          "H"
+        ],
+        [
+          0,
+          11,
+          2,
+          "V"
+        ],
+        [
+          3,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-009",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          9,
+          5,
+          "V"
+        ],
+        [
+          2,
+          2,
+          4,
+          "V"
+        ],
+        [
+          7,
+          2,
+          3,
+          "H"
+        ],
+        [
+          3,
+          7,
+          2,
+          "V"
+        ],
+        [
+          0,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-010",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          2,
+          5,
+          "V"
+        ],
+        [
+          2,
+          9,
+          4,
+          "V"
+        ],
+        [
+          7,
+          7,
+          3,
+          "H"
+        ],
+        [
+          3,
+          4,
+          2,
+          "V"
+        ],
+        [
+          0,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-011",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          9,
+          5,
+          "V"
+        ],
+        [
+          2,
+          2,
+          4,
+          "V"
+        ],
+        [
+          0,
+          2,
+          3,
+          "H"
+        ],
+        [
+          3,
+          7,
+          2,
+          "V"
+        ],
+        [
+          7,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-012",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          2,
+          5,
+          "V"
+        ],
+        [
+          2,
+          9,
+          4,
+          "V"
+        ],
+        [
+          0,
+          7,
+          3,
+          "H"
+        ],
+        [
+          3,
+          4,
+          2,
+          "V"
+        ],
+        [
+          7,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-013",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          3,
+          5,
+          "H"
+        ],
+        [
+          2,
+          8,
+          4,
+          "V"
+        ],
+        [
+          5,
+          4,
+          3,
+          "V"
+        ],
+        [
+          6,
+          0,
+          2,
+          "V"
+        ],
+        [
+          6,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-014",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          4,
+          5,
+          "H"
+        ],
+        [
+          2,
+          3,
+          4,
+          "V"
+        ],
+        [
+          5,
+          7,
+          3,
+          "V"
+        ],
+        [
+          6,
+          11,
+          2,
+          "V"
+        ],
+        [
+          6,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-015",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          3,
+          5,
+          "H"
+        ],
+        [
+          2,
+          8,
+          4,
+          "V"
+        ],
+        [
+          0,
+          4,
+          3,
+          "V"
+        ],
+        [
+          0,
+          0,
+          2,
+          "V"
+        ],
+        [
+          0,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-016",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          4,
+          5,
+          "H"
+        ],
+        [
+          2,
+          3,
+          4,
+          "V"
+        ],
+        [
+          0,
+          7,
+          3,
+          "V"
+        ],
+        [
+          0,
+          11,
+          2,
+          "V"
+        ],
+        [
+          0,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-017",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          0,
+          5,
+          "H"
+        ],
+        [
+          0,
+          9,
+          4,
+          "V"
+        ],
+        [
+          6,
+          4,
+          3,
+          "H"
+        ],
+        [
+          6,
+          10,
+          2,
+          "V"
+        ],
+        [
+          5,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-018",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          7,
+          5,
+          "H"
+        ],
+        [
+          0,
+          2,
+          4,
+          "V"
+        ],
+        [
+          6,
+          5,
+          3,
+          "H"
+        ],
+        [
+          6,
+          1,
+          2,
+          "V"
+        ],
+        [
+          5,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-019",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          0,
+          5,
+          "H"
+        ],
+        [
+          4,
+          9,
+          4,
+          "V"
+        ],
+        [
+          1,
+          4,
+          3,
+          "H"
+        ],
+        [
+          0,
+          10,
+          2,
+          "V"
+        ],
+        [
+          2,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-020",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          7,
+          5,
+          "H"
+        ],
+        [
+          4,
+          2,
+          4,
+          "V"
+        ],
+        [
+          1,
+          5,
+          3,
+          "H"
+        ],
+        [
+          0,
+          1,
+          2,
+          "V"
+        ],
+        [
+          2,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-021",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          0,
+          5,
+          "V"
+        ],
+        [
+          0,
+          6,
+          4,
+          "V"
+        ],
+        [
+          4,
+          8,
+          3,
+          "H"
+        ],
+        [
+          1,
+          4,
+          2,
+          "V"
+        ],
+        [
+          4,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-022",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          11,
+          5,
+          "V"
+        ],
+        [
+          0,
+          5,
+          4,
+          "V"
+        ],
+        [
+          4,
+          1,
+          3,
+          "H"
+        ],
+        [
+          1,
+          7,
+          2,
+          "V"
+        ],
+        [
+          4,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-023",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          0,
+          5,
+          "V"
+        ],
+        [
+          4,
+          6,
+          4,
+          "V"
+        ],
+        [
+          3,
+          8,
+          3,
+          "H"
+        ],
+        [
+          5,
+          4,
+          2,
+          "V"
+        ],
+        [
+          2,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-024",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          11,
+          5,
+          "V"
+        ],
+        [
+          4,
+          5,
+          4,
+          "V"
+        ],
+        [
+          3,
+          1,
+          3,
+          "H"
+        ],
+        [
+          5,
+          7,
+          2,
+          "V"
+        ],
+        [
+          2,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-025",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          0,
+          5,
+          "V"
+        ],
+        [
+          2,
+          1,
+          4,
+          "H"
+        ],
+        [
+          7,
+          8,
+          3,
+          "H"
+        ],
+        [
+          0,
+          10,
+          2,
+          "H"
+        ],
+        [
+          3,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-026",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          11,
+          5,
+          "V"
+        ],
+        [
+          2,
+          7,
+          4,
+          "H"
+        ],
+        [
+          7,
+          1,
+          3,
+          "H"
+        ],
+        [
+          0,
+          0,
+          2,
+          "H"
+        ],
+        [
+          3,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-027",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          0,
+          5,
+          "V"
+        ],
+        [
+          5,
+          1,
+          4,
+          "H"
+        ],
+        [
+          0,
+          8,
+          3,
+          "H"
+        ],
+        [
+          7,
+          10,
+          2,
+          "H"
+        ],
+        [
+          4,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-028",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          11,
+          5,
+          "V"
+        ],
+        [
+          5,
+          7,
+          4,
+          "H"
+        ],
+        [
+          0,
+          1,
+          3,
+          "H"
+        ],
+        [
+          7,
+          0,
+          2,
+          "H"
+        ],
+        [
+          4,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-029",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          9,
+          5,
+          "V"
+        ],
+        [
+          0,
+          11,
+          4,
+          "V"
+        ],
+        [
+          2,
+          7,
+          3,
+          "V"
+        ],
+        [
+          4,
+          6,
+          2,
+          "V"
+        ],
+        [
+          6,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-030",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          2,
+          5,
+          "V"
+        ],
+        [
+          0,
+          0,
+          4,
+          "V"
+        ],
+        [
+          2,
+          4,
+          3,
+          "V"
+        ],
+        [
+          4,
+          5,
+          2,
+          "V"
+        ],
+        [
+          6,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-031",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          9,
+          5,
+          "V"
+        ],
+        [
+          4,
+          11,
+          4,
+          "V"
+        ],
+        [
+          3,
+          7,
+          3,
+          "V"
+        ],
+        [
+          2,
+          6,
+          2,
+          "V"
+        ],
+        [
+          1,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-032",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          2,
+          5,
+          "V"
+        ],
+        [
+          4,
+          0,
+          4,
+          "V"
+        ],
+        [
+          3,
+          4,
+          3,
+          "V"
+        ],
+        [
+          2,
+          5,
+          2,
+          "V"
+        ],
+        [
+          1,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-033",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          1,
+          5,
+          "H"
+        ],
+        [
+          1,
+          7,
+          4,
+          "H"
+        ],
+        [
+          1,
+          2,
+          3,
+          "H"
+        ],
+        [
+          6,
+          8,
+          2,
+          "H"
+        ],
+        [
+          5,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-034",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          6,
+          5,
+          "H"
+        ],
+        [
+          1,
+          1,
+          4,
+          "H"
+        ],
+        [
+          1,
+          7,
+          3,
+          "H"
+        ],
+        [
+          6,
+          2,
+          2,
+          "H"
+        ],
+        [
+          5,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-035",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          1,
+          5,
+          "H"
+        ],
+        [
+          6,
+          7,
+          4,
+          "H"
+        ],
+        [
+          6,
+          2,
+          3,
+          "H"
+        ],
+        [
+          1,
+          8,
+          2,
+          "H"
+        ],
+        [
+          1,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-036",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          6,
+          5,
+          "H"
+        ],
+        [
+          6,
+          1,
+          4,
+          "H"
+        ],
+        [
+          6,
+          7,
+          3,
+          "H"
+        ],
+        [
+          1,
+          2,
+          2,
+          "H"
+        ],
+        [
+          1,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-037",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          10,
+          5,
+          "V"
+        ],
+        [
+          4,
+          3,
+          4,
+          "V"
+        ],
+        [
+          6,
+          5,
+          3,
+          "H"
+        ],
+        [
+          1,
+          8,
+          2,
+          "V"
+        ],
+        [
+          2,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-038",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          1,
+          5,
+          "V"
+        ],
+        [
+          4,
+          8,
+          4,
+          "V"
+        ],
+        [
+          6,
+          4,
+          3,
+          "H"
+        ],
+        [
+          1,
+          3,
+          2,
+          "V"
+        ],
+        [
+          2,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-039",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          10,
+          5,
+          "V"
+        ],
+        [
+          0,
+          3,
+          4,
+          "V"
+        ],
+        [
+          1,
+          5,
+          3,
+          "H"
+        ],
+        [
+          5,
+          8,
+          2,
+          "V"
+        ],
+        [
+          5,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-040",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          1,
+          5,
+          "V"
+        ],
+        [
+          0,
+          8,
+          4,
+          "V"
+        ],
+        [
+          1,
+          4,
+          3,
+          "H"
+        ],
+        [
+          5,
+          3,
+          2,
+          "V"
+        ],
+        [
+          5,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-041",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          5,
+          5,
+          "V"
+        ],
+        [
+          7,
+          2,
+          4,
+          "H"
+        ],
+        [
+          2,
+          9,
+          3,
+          "V"
+        ],
+        [
+          1,
+          0,
+          2,
+          "V"
+        ],
+        [
+          0,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-042",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          6,
+          5,
+          "V"
+        ],
+        [
+          7,
+          6,
+          4,
+          "H"
+        ],
+        [
+          2,
+          2,
+          3,
+          "V"
+        ],
+        [
+          1,
+          11,
+          2,
+          "V"
+        ],
+        [
+          0,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-043",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          5,
+          5,
+          "V"
+        ],
+        [
+          0,
+          2,
+          4,
+          "H"
+        ],
+        [
+          3,
+          9,
+          3,
+          "V"
+        ],
+        [
+          5,
+          0,
+          2,
+          "V"
+        ],
+        [
+          7,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-044",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          6,
+          5,
+          "V"
+        ],
+        [
+          0,
+          6,
+          4,
+          "H"
+        ],
+        [
+          3,
+          2,
+          3,
+          "V"
+        ],
+        [
+          5,
+          11,
+          2,
+          "V"
+        ],
+        [
+          7,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-045",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          7,
+          5,
+          "H"
+        ],
+        [
+          6,
+          2,
+          4,
+          "H"
+        ],
+        [
+          3,
+          3,
+          3,
+          "H"
+        ],
+        [
+          0,
+          3,
+          2,
+          "H"
+        ],
+        [
+          0,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-046",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          0,
+          5,
+          "H"
+        ],
+        [
+          6,
+          6,
+          4,
+          "H"
+        ],
+        [
+          3,
+          6,
+          3,
+          "H"
+        ],
+        [
+          0,
+          7,
+          2,
+          "H"
+        ],
+        [
+          0,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-047",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          7,
+          5,
+          "H"
+        ],
+        [
+          1,
+          2,
+          4,
+          "H"
+        ],
+        [
+          4,
+          3,
+          3,
+          "H"
+        ],
+        [
+          7,
+          3,
+          2,
+          "H"
+        ],
+        [
+          6,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-048",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          0,
+          5,
+          "H"
+        ],
+        [
+          1,
+          6,
+          4,
+          "H"
+        ],
+        [
+          4,
+          6,
+          3,
+          "H"
+        ],
+        [
+          7,
+          7,
+          2,
+          "H"
+        ],
+        [
+          6,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-049",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          5,
+          5,
+          "H"
+        ],
+        [
+          6,
+          5,
+          4,
+          "H"
+        ],
+        [
+          2,
+          3,
+          3,
+          "H"
+        ],
+        [
+          3,
+          10,
+          2,
+          "H"
+        ],
+        [
+          6,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-050",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          2,
+          5,
+          "H"
+        ],
+        [
+          6,
+          3,
+          4,
+          "H"
+        ],
+        [
+          2,
+          6,
+          3,
+          "H"
+        ],
+        [
+          3,
+          0,
+          2,
+          "H"
+        ],
+        [
+          6,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-051",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          5,
+          5,
+          "H"
+        ],
+        [
+          1,
+          5,
+          4,
+          "H"
+        ],
+        [
+          5,
+          3,
+          3,
+          "H"
+        ],
+        [
+          4,
+          10,
+          2,
+          "H"
+        ],
+        [
+          1,
+          2,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-052",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          2,
+          5,
+          "H"
+        ],
+        [
+          1,
+          3,
+          4,
+          "H"
+        ],
+        [
+          5,
+          6,
+          3,
+          "H"
+        ],
+        [
+          4,
+          0,
+          2,
+          "H"
+        ],
+        [
+          1,
+          8,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-053",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          5,
+          5,
+          "H"
+        ],
+        [
+          5,
+          5,
+          4,
+          "H"
+        ],
+        [
+          7,
+          5,
+          3,
+          "H"
+        ],
+        [
+          7,
+          1,
+          2,
+          "H"
+        ],
+        [
+          2,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-054",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          2,
+          5,
+          "H"
+        ],
+        [
+          5,
+          3,
+          4,
+          "H"
+        ],
+        [
+          7,
+          4,
+          3,
+          "H"
+        ],
+        [
+          7,
+          9,
+          2,
+          "H"
+        ],
+        [
+          2,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-055",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          5,
+          5,
+          "H"
+        ],
+        [
+          2,
+          5,
+          4,
+          "H"
+        ],
+        [
+          0,
+          5,
+          3,
+          "H"
+        ],
+        [
+          0,
+          1,
+          2,
+          "H"
+        ],
+        [
+          5,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-056",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          2,
+          5,
+          "H"
+        ],
+        [
+          2,
+          3,
+          4,
+          "H"
+        ],
+        [
+          0,
+          4,
+          3,
+          "H"
+        ],
+        [
+          0,
+          9,
+          2,
+          "H"
+        ],
+        [
+          5,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-057",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          6,
+          5,
+          "V"
+        ],
+        [
+          0,
+          0,
+          4,
+          "H"
+        ],
+        [
+          1,
+          3,
+          3,
+          "V"
+        ],
+        [
+          0,
+          10,
+          2,
+          "H"
+        ],
+        [
+          7,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-058",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          5,
+          5,
+          "V"
+        ],
+        [
+          0,
+          8,
+          4,
+          "H"
+        ],
+        [
+          1,
+          8,
+          3,
+          "V"
+        ],
+        [
+          0,
+          0,
+          2,
+          "H"
+        ],
+        [
+          7,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-059",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          6,
+          5,
+          "V"
+        ],
+        [
+          7,
+          0,
+          4,
+          "H"
+        ],
+        [
+          4,
+          3,
+          3,
+          "V"
+        ],
+        [
+          7,
+          10,
+          2,
+          "H"
+        ],
+        [
+          0,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-060",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          5,
+          5,
+          "V"
+        ],
+        [
+          7,
+          8,
+          4,
+          "H"
+        ],
+        [
+          4,
+          8,
+          3,
+          "V"
+        ],
+        [
+          7,
+          0,
+          2,
+          "H"
+        ],
+        [
+          0,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-061",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          4,
+          5,
+          "V"
+        ],
+        [
+          5,
+          6,
+          4,
+          "H"
+        ],
+        [
+          5,
+          1,
+          3,
+          "H"
+        ],
+        [
+          0,
+          2,
+          2,
+          "H"
+        ],
+        [
+          0,
+          7,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-062",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          7,
+          5,
+          "V"
+        ],
+        [
+          5,
+          2,
+          4,
+          "H"
+        ],
+        [
+          5,
+          8,
+          3,
+          "H"
+        ],
+        [
+          0,
+          8,
+          2,
+          "H"
+        ],
+        [
+          0,
+          4,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-063",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          4,
+          5,
+          "V"
+        ],
+        [
+          2,
+          6,
+          4,
+          "H"
+        ],
+        [
+          2,
+          1,
+          3,
+          "H"
+        ],
+        [
+          7,
+          2,
+          2,
+          "H"
+        ],
+        [
+          6,
+          7,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-064",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          7,
+          5,
+          "V"
+        ],
+        [
+          2,
+          2,
+          4,
+          "H"
+        ],
+        [
+          2,
+          8,
+          3,
+          "H"
+        ],
+        [
+          7,
+          8,
+          2,
+          "H"
+        ],
+        [
+          6,
+          4,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-065",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          7,
+          5,
+          "H"
+        ],
+        [
+          1,
+          2,
+          4,
+          "H"
+        ],
+        [
+          5,
+          5,
+          3,
+          "H"
+        ],
+        [
+          5,
+          9,
+          2,
+          "H"
+        ],
+        [
+          5,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-066",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          0,
+          5,
+          "H"
+        ],
+        [
+          1,
+          6,
+          4,
+          "H"
+        ],
+        [
+          5,
+          4,
+          3,
+          "H"
+        ],
+        [
+          5,
+          1,
+          2,
+          "H"
+        ],
+        [
+          5,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-067",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          7,
+          5,
+          "H"
+        ],
+        [
+          6,
+          2,
+          4,
+          "H"
+        ],
+        [
+          2,
+          5,
+          3,
+          "H"
+        ],
+        [
+          2,
+          9,
+          2,
+          "H"
+        ],
+        [
+          2,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-068",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          0,
+          5,
+          "H"
+        ],
+        [
+          6,
+          6,
+          4,
+          "H"
+        ],
+        [
+          2,
+          4,
+          3,
+          "H"
+        ],
+        [
+          2,
+          1,
+          2,
+          "H"
+        ],
+        [
+          2,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-069",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          7,
+          2,
+          5,
+          "H"
+        ],
+        [
+          0,
+          6,
+          4,
+          "V"
+        ],
+        [
+          2,
+          10,
+          3,
+          "V"
+        ],
+        [
+          4,
+          4,
+          2,
+          "V"
+        ],
+        [
+          0,
+          3,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-070",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          7,
+          5,
+          5,
+          "H"
+        ],
+        [
+          0,
+          5,
+          4,
+          "V"
+        ],
+        [
+          2,
+          1,
+          3,
+          "V"
+        ],
+        [
+          4,
+          7,
+          2,
+          "V"
+        ],
+        [
+          0,
+          7,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-071",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          2,
+          5,
+          "H"
+        ],
+        [
+          4,
+          6,
+          4,
+          "V"
+        ],
+        [
+          3,
+          10,
+          3,
+          "V"
+        ],
+        [
+          2,
+          4,
+          2,
+          "V"
+        ],
+        [
+          7,
+          3,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-072",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          5,
+          5,
+          "H"
+        ],
+        [
+          4,
+          5,
+          4,
+          "V"
+        ],
+        [
+          3,
+          1,
+          3,
+          "V"
+        ],
+        [
+          2,
+          7,
+          2,
+          "V"
+        ],
+        [
+          7,
+          7,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-073",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          0,
+          5,
+          "H"
+        ],
+        [
+          4,
+          3,
+          4,
+          "H"
+        ],
+        [
+          5,
+          9,
+          3,
+          "H"
+        ],
+        [
+          5,
+          0,
+          2,
+          "H"
+        ],
+        [
+          7,
+          5,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-074",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          7,
+          5,
+          "H"
+        ],
+        [
+          4,
+          5,
+          4,
+          "H"
+        ],
+        [
+          5,
+          0,
+          3,
+          "H"
+        ],
+        [
+          5,
+          10,
+          2,
+          "H"
+        ],
+        [
+          7,
+          5,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-075",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          0,
+          5,
+          "H"
+        ],
+        [
+          3,
+          3,
+          4,
+          "H"
+        ],
+        [
+          2,
+          9,
+          3,
+          "H"
+        ],
+        [
+          2,
+          0,
+          2,
+          "H"
+        ],
+        [
+          0,
+          5,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-076",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          7,
+          5,
+          "H"
+        ],
+        [
+          3,
+          5,
+          4,
+          "H"
+        ],
+        [
+          2,
+          0,
+          3,
+          "H"
+        ],
+        [
+          2,
+          10,
+          2,
+          "H"
+        ],
+        [
+          0,
+          5,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-077",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          0,
+          5,
+          "H"
+        ],
+        [
+          4,
+          9,
+          4,
+          "V"
+        ],
+        [
+          3,
+          5,
+          3,
+          "H"
+        ],
+        [
+          3,
+          10,
+          2,
+          "H"
+        ],
+        [
+          6,
+          4,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-078",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          7,
+          5,
+          "H"
+        ],
+        [
+          4,
+          2,
+          4,
+          "V"
+        ],
+        [
+          3,
+          4,
+          3,
+          "H"
+        ],
+        [
+          3,
+          0,
+          2,
+          "H"
+        ],
+        [
+          6,
+          7,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-079",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          0,
+          5,
+          "H"
+        ],
+        [
+          0,
+          9,
+          4,
+          "V"
+        ],
+        [
+          4,
+          5,
+          3,
+          "H"
+        ],
+        [
+          4,
+          10,
+          2,
+          "H"
+        ],
+        [
+          0,
+          4,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-080",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          7,
+          5,
+          "H"
+        ],
+        [
+          0,
+          2,
+          4,
+          "V"
+        ],
+        [
+          4,
+          4,
+          3,
+          "H"
+        ],
+        [
+          4,
+          0,
+          2,
+          "H"
+        ],
+        [
+          0,
+          7,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-081",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          3,
+          5,
+          "H"
+        ],
+        [
+          0,
+          5,
+          4,
+          "H"
+        ],
+        [
+          2,
+          8,
+          3,
+          "H"
+        ],
+        [
+          4,
+          8,
+          2,
+          "H"
+        ],
+        [
+          5,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-082",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          4,
+          5,
+          "H"
+        ],
+        [
+          0,
+          3,
+          4,
+          "H"
+        ],
+        [
+          2,
+          1,
+          3,
+          "H"
+        ],
+        [
+          4,
+          2,
+          2,
+          "H"
+        ],
+        [
+          5,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-083",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          3,
+          5,
+          "H"
+        ],
+        [
+          7,
+          5,
+          4,
+          "H"
+        ],
+        [
+          5,
+          8,
+          3,
+          "H"
+        ],
+        [
+          3,
+          8,
+          2,
+          "H"
+        ],
+        [
+          2,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-084",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          5,
+          4,
+          5,
+          "H"
+        ],
+        [
+          7,
+          3,
+          4,
+          "H"
+        ],
+        [
+          5,
+          1,
+          3,
+          "H"
+        ],
+        [
+          3,
+          2,
+          2,
+          "H"
+        ],
+        [
+          2,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-085",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          6,
+          5,
+          "V"
+        ],
+        [
+          0,
+          7,
+          4,
+          "H"
+        ],
+        [
+          5,
+          2,
+          3,
+          "V"
+        ],
+        [
+          6,
+          0,
+          2,
+          "V"
+        ],
+        [
+          0,
+          3,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-086",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          5,
+          5,
+          "V"
+        ],
+        [
+          0,
+          1,
+          4,
+          "H"
+        ],
+        [
+          5,
+          9,
+          3,
+          "V"
+        ],
+        [
+          6,
+          11,
+          2,
+          "V"
+        ],
+        [
+          0,
+          7,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-087",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          6,
+          5,
+          "V"
+        ],
+        [
+          7,
+          7,
+          4,
+          "H"
+        ],
+        [
+          0,
+          2,
+          3,
+          "V"
+        ],
+        [
+          0,
+          0,
+          2,
+          "V"
+        ],
+        [
+          7,
+          3,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-088",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          5,
+          5,
+          "V"
+        ],
+        [
+          7,
+          1,
+          4,
+          "H"
+        ],
+        [
+          0,
+          9,
+          3,
+          "V"
+        ],
+        [
+          0,
+          11,
+          2,
+          "V"
+        ],
+        [
+          7,
+          7,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-089",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          5,
+          5,
+          "H"
+        ],
+        [
+          4,
+          3,
+          4,
+          "V"
+        ],
+        [
+          4,
+          9,
+          3,
+          "V"
+        ],
+        [
+          1,
+          11,
+          2,
+          "V"
+        ],
+        [
+          5,
+          7,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-090",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          2,
+          5,
+          "H"
+        ],
+        [
+          4,
+          8,
+          4,
+          "V"
+        ],
+        [
+          4,
+          2,
+          3,
+          "V"
+        ],
+        [
+          1,
+          0,
+          2,
+          "V"
+        ],
+        [
+          5,
+          3,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-091",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          5,
+          5,
+          "H"
+        ],
+        [
+          0,
+          3,
+          4,
+          "V"
+        ],
+        [
+          1,
+          9,
+          3,
+          "V"
+        ],
+        [
+          5,
+          11,
+          2,
+          "V"
+        ],
+        [
+          2,
+          7,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-092",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          2,
+          5,
+          "H"
+        ],
+        [
+          0,
+          8,
+          4,
+          "V"
+        ],
+        [
+          1,
+          2,
+          3,
+          "V"
+        ],
+        [
+          5,
+          0,
+          2,
+          "V"
+        ],
+        [
+          2,
+          3,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-093",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          6,
+          5,
+          "H"
+        ],
+        [
+          2,
+          4,
+          4,
+          "V"
+        ],
+        [
+          5,
+          7,
+          3,
+          "V"
+        ],
+        [
+          1,
+          7,
+          2,
+          "V"
+        ],
+        [
+          0,
+          0,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-094",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          1,
+          5,
+          "H"
+        ],
+        [
+          2,
+          7,
+          4,
+          "V"
+        ],
+        [
+          5,
+          4,
+          3,
+          "V"
+        ],
+        [
+          1,
+          4,
+          2,
+          "V"
+        ],
+        [
+          0,
+          11,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-095",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          6,
+          5,
+          "H"
+        ],
+        [
+          2,
+          4,
+          4,
+          "V"
+        ],
+        [
+          0,
+          7,
+          3,
+          "V"
+        ],
+        [
+          5,
+          7,
+          2,
+          "V"
+        ],
+        [
+          6,
+          0,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-096",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          1,
+          5,
+          "H"
+        ],
+        [
+          2,
+          7,
+          4,
+          "V"
+        ],
+        [
+          0,
+          4,
+          3,
+          "V"
+        ],
+        [
+          5,
+          4,
+          2,
+          "V"
+        ],
+        [
+          6,
+          11,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-097",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          3,
+          5,
+          "H"
+        ],
+        [
+          2,
+          9,
+          4,
+          "V"
+        ],
+        [
+          5,
+          0,
+          3,
+          "V"
+        ],
+        [
+          0,
+          11,
+          2,
+          "V"
+        ],
+        [
+          7,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-098",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          4,
+          5,
+          "H"
+        ],
+        [
+          2,
+          2,
+          4,
+          "V"
+        ],
+        [
+          5,
+          11,
+          3,
+          "V"
+        ],
+        [
+          0,
+          0,
+          2,
+          "V"
+        ],
+        [
+          7,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-099",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          3,
+          5,
+          "H"
+        ],
+        [
+          2,
+          9,
+          4,
+          "V"
+        ],
+        [
+          0,
+          0,
+          3,
+          "V"
+        ],
+        [
+          6,
+          11,
+          2,
+          "V"
+        ],
+        [
+          0,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-100",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          4,
+          5,
+          "H"
+        ],
+        [
+          2,
+          2,
+          4,
+          "V"
+        ],
+        [
+          0,
+          11,
+          3,
+          "V"
+        ],
+        [
+          6,
+          0,
+          2,
+          "V"
+        ],
+        [
+          0,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-101",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          2,
+          5,
+          "H"
+        ],
+        [
+          6,
+          5,
+          4,
+          "H"
+        ],
+        [
+          7,
+          5,
+          3,
+          "H"
+        ],
+        [
+          5,
+          10,
+          2,
+          "V"
+        ],
+        [
+          2,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-102",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          5,
+          5,
+          "H"
+        ],
+        [
+          6,
+          3,
+          4,
+          "H"
+        ],
+        [
+          7,
+          4,
+          3,
+          "H"
+        ],
+        [
+          5,
+          1,
+          2,
+          "V"
+        ],
+        [
+          2,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-103",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          2,
+          5,
+          "H"
+        ],
+        [
+          1,
+          5,
+          4,
+          "H"
+        ],
+        [
+          0,
+          5,
+          3,
+          "H"
+        ],
+        [
+          1,
+          10,
+          2,
+          "V"
+        ],
+        [
+          5,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-104",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          5,
+          5,
+          "H"
+        ],
+        [
+          1,
+          3,
+          4,
+          "H"
+        ],
+        [
+          0,
+          4,
+          3,
+          "H"
+        ],
+        [
+          1,
+          1,
+          2,
+          "V"
+        ],
+        [
+          5,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-105",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          3,
+          5,
+          "V"
+        ],
+        [
+          3,
+          9,
+          4,
+          "V"
+        ],
+        [
+          4,
+          0,
+          3,
+          "H"
+        ],
+        [
+          0,
+          0,
+          2,
+          "H"
+        ],
+        [
+          3,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-106",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          8,
+          5,
+          "V"
+        ],
+        [
+          3,
+          2,
+          4,
+          "V"
+        ],
+        [
+          4,
+          9,
+          3,
+          "H"
+        ],
+        [
+          0,
+          10,
+          2,
+          "H"
+        ],
+        [
+          3,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-107",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          3,
+          5,
+          "V"
+        ],
+        [
+          1,
+          9,
+          4,
+          "V"
+        ],
+        [
+          3,
+          0,
+          3,
+          "H"
+        ],
+        [
+          7,
+          0,
+          2,
+          "H"
+        ],
+        [
+          4,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-108",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          8,
+          5,
+          "V"
+        ],
+        [
+          1,
+          2,
+          4,
+          "V"
+        ],
+        [
+          3,
+          9,
+          3,
+          "H"
+        ],
+        [
+          7,
+          10,
+          2,
+          "H"
+        ],
+        [
+          4,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-109",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          5,
+          5,
+          "V"
+        ],
+        [
+          2,
+          11,
+          4,
+          "V"
+        ],
+        [
+          1,
+          4,
+          3,
+          "V"
+        ],
+        [
+          4,
+          9,
+          2,
+          "H"
+        ],
+        [
+          3,
+          2,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-110",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          6,
+          5,
+          "V"
+        ],
+        [
+          2,
+          0,
+          4,
+          "V"
+        ],
+        [
+          1,
+          7,
+          3,
+          "V"
+        ],
+        [
+          4,
+          1,
+          2,
+          "H"
+        ],
+        [
+          3,
+          9,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-111",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          5,
+          5,
+          "V"
+        ],
+        [
+          2,
+          11,
+          4,
+          "V"
+        ],
+        [
+          4,
+          4,
+          3,
+          "V"
+        ],
+        [
+          3,
+          9,
+          2,
+          "H"
+        ],
+        [
+          3,
+          2,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-112",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          6,
+          5,
+          "V"
+        ],
+        [
+          2,
+          0,
+          4,
+          "V"
+        ],
+        [
+          4,
+          7,
+          3,
+          "V"
+        ],
+        [
+          3,
+          1,
+          2,
+          "H"
+        ],
+        [
+          3,
+          9,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-113",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          2,
+          5,
+          "H"
+        ],
+        [
+          1,
+          1,
+          4,
+          "H"
+        ],
+        [
+          6,
+          9,
+          3,
+          "H"
+        ],
+        [
+          2,
+          0,
+          2,
+          "V"
+        ],
+        [
+          2,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-114",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          5,
+          5,
+          "H"
+        ],
+        [
+          1,
+          7,
+          4,
+          "H"
+        ],
+        [
+          6,
+          0,
+          3,
+          "H"
+        ],
+        [
+          2,
+          11,
+          2,
+          "V"
+        ],
+        [
+          2,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-115",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          2,
+          5,
+          "H"
+        ],
+        [
+          6,
+          1,
+          4,
+          "H"
+        ],
+        [
+          1,
+          9,
+          3,
+          "H"
+        ],
+        [
+          4,
+          0,
+          2,
+          "V"
+        ],
+        [
+          5,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-116",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          4,
+          5,
+          5,
+          "H"
+        ],
+        [
+          6,
+          7,
+          4,
+          "H"
+        ],
+        [
+          1,
+          0,
+          3,
+          "H"
+        ],
+        [
+          4,
+          11,
+          2,
+          "V"
+        ],
+        [
+          5,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-117",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          1,
+          5,
+          "V"
+        ],
+        [
+          2,
+          10,
+          4,
+          "V"
+        ],
+        [
+          7,
+          3,
+          3,
+          "H"
+        ],
+        [
+          3,
+          7,
+          2,
+          "H"
+        ],
+        [
+          6,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-118",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          3,
+          10,
+          5,
+          "V"
+        ],
+        [
+          2,
+          1,
+          4,
+          "V"
+        ],
+        [
+          7,
+          6,
+          3,
+          "H"
+        ],
+        [
+          3,
+          3,
+          2,
+          "H"
+        ],
+        [
+          6,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-119",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          1,
+          5,
+          "V"
+        ],
+        [
+          2,
+          10,
+          4,
+          "V"
+        ],
+        [
+          0,
+          3,
+          3,
+          "H"
+        ],
+        [
+          4,
+          7,
+          2,
+          "H"
+        ],
+        [
+          0,
+          6,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-120",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          0,
+          10,
+          5,
+          "V"
+        ],
+        [
+          2,
+          1,
+          4,
+          "V"
+        ],
+        [
+          0,
+          6,
+          3,
+          "H"
+        ],
+        [
+          4,
+          3,
+          2,
+          "H"
+        ],
+        [
+          0,
+          5,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-121",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          11,
+          5,
+          "V"
+        ],
+        [
+          4,
+          9,
+          4,
+          "V"
+        ],
+        [
+          7,
+          1,
+          3,
+          "H"
+        ],
+        [
+          0,
+          4,
+          2,
+          "H"
+        ],
+        [
+          0,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-122",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          0,
+          5,
+          "V"
+        ],
+        [
+          4,
+          2,
+          4,
+          "V"
+        ],
+        [
+          7,
+          8,
+          3,
+          "H"
+        ],
+        [
+          0,
+          6,
+          2,
+          "H"
+        ],
+        [
+          0,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-123",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          11,
+          5,
+          "V"
+        ],
+        [
+          0,
+          9,
+          4,
+          "V"
+        ],
+        [
+          0,
+          1,
+          3,
+          "H"
+        ],
+        [
+          7,
+          4,
+          2,
+          "H"
+        ],
+        [
+          7,
+          9,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-124",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          0,
+          5,
+          "V"
+        ],
+        [
+          0,
+          2,
+          4,
+          "V"
+        ],
+        [
+          0,
+          8,
+          3,
+          "H"
+        ],
+        [
+          7,
+          6,
+          2,
+          "H"
+        ],
+        [
+          7,
+          1,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-125",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          1,
+          5,
+          "H"
+        ],
+        [
+          4,
+          0,
+          4,
+          "H"
+        ],
+        [
+          6,
+          7,
+          3,
+          "H"
+        ],
+        [
+          2,
+          8,
+          2,
+          "V"
+        ],
+        [
+          2,
+          11,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-126",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          6,
+          5,
+          "H"
+        ],
+        [
+          4,
+          8,
+          4,
+          "H"
+        ],
+        [
+          6,
+          2,
+          3,
+          "H"
+        ],
+        [
+          2,
+          3,
+          2,
+          "V"
+        ],
+        [
+          2,
+          0,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-127",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          1,
+          5,
+          "H"
+        ],
+        [
+          3,
+          0,
+          4,
+          "H"
+        ],
+        [
+          1,
+          7,
+          3,
+          "H"
+        ],
+        [
+          4,
+          8,
+          2,
+          "V"
+        ],
+        [
+          4,
+          11,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-128",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          6,
+          5,
+          "H"
+        ],
+        [
+          3,
+          8,
+          4,
+          "H"
+        ],
+        [
+          1,
+          2,
+          3,
+          "H"
+        ],
+        [
+          4,
+          3,
+          2,
+          "V"
+        ],
+        [
+          4,
+          0,
+          2,
+          "V"
+        ]
+      ]
+    },
+    {
+      "id": "course-129",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          5,
+          5,
+          "H"
+        ],
+        [
+          6,
+          2,
+          4,
+          "H"
+        ],
+        [
+          4,
+          3,
+          3,
+          "H"
+        ],
+        [
+          6,
+          8,
+          2,
+          "V"
+        ],
+        [
+          3,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-130",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          2,
+          5,
+          "H"
+        ],
+        [
+          6,
+          6,
+          4,
+          "H"
+        ],
+        [
+          4,
+          6,
+          3,
+          "H"
+        ],
+        [
+          6,
+          3,
+          2,
+          "V"
+        ],
+        [
+          3,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-131",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          5,
+          5,
+          "H"
+        ],
+        [
+          1,
+          2,
+          4,
+          "H"
+        ],
+        [
+          3,
+          3,
+          3,
+          "H"
+        ],
+        [
+          0,
+          8,
+          2,
+          "V"
+        ],
+        [
+          4,
+          6,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-132",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          2,
+          5,
+          "H"
+        ],
+        [
+          1,
+          6,
+          4,
+          "H"
+        ],
+        [
+          3,
+          6,
+          3,
+          "H"
+        ],
+        [
+          0,
+          3,
+          2,
+          "V"
+        ],
+        [
+          4,
+          4,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-133",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          3,
+          5,
+          "H"
+        ],
+        [
+          0,
+          0,
+          4,
+          "H"
+        ],
+        [
+          5,
+          4,
+          3,
+          "V"
+        ],
+        [
+          6,
+          6,
+          2,
+          "V"
+        ],
+        [
+          7,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-134",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          4,
+          5,
+          "H"
+        ],
+        [
+          0,
+          8,
+          4,
+          "H"
+        ],
+        [
+          5,
+          7,
+          3,
+          "V"
+        ],
+        [
+          6,
+          5,
+          2,
+          "V"
+        ],
+        [
+          7,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-135",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          3,
+          5,
+          "H"
+        ],
+        [
+          7,
+          0,
+          4,
+          "H"
+        ],
+        [
+          0,
+          4,
+          3,
+          "V"
+        ],
+        [
+          0,
+          6,
+          2,
+          "V"
+        ],
+        [
+          0,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-136",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          6,
+          4,
+          5,
+          "H"
+        ],
+        [
+          7,
+          8,
+          4,
+          "H"
+        ],
+        [
+          0,
+          7,
+          3,
+          "V"
+        ],
+        [
+          0,
+          5,
+          2,
+          "V"
+        ],
+        [
+          0,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-137",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          2,
+          5,
+          "V"
+        ],
+        [
+          2,
+          6,
+          4,
+          "H"
+        ],
+        [
+          6,
+          5,
+          3,
+          "H"
+        ],
+        [
+          3,
+          4,
+          2,
+          "V"
+        ],
+        [
+          6,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-138",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          9,
+          5,
+          "V"
+        ],
+        [
+          2,
+          2,
+          4,
+          "H"
+        ],
+        [
+          6,
+          4,
+          3,
+          "H"
+        ],
+        [
+          3,
+          7,
+          2,
+          "V"
+        ],
+        [
+          6,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-139",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          2,
+          5,
+          "V"
+        ],
+        [
+          5,
+          6,
+          4,
+          "H"
+        ],
+        [
+          1,
+          5,
+          3,
+          "H"
+        ],
+        [
+          3,
+          4,
+          2,
+          "V"
+        ],
+        [
+          1,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-140",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          9,
+          5,
+          "V"
+        ],
+        [
+          5,
+          2,
+          4,
+          "H"
+        ],
+        [
+          1,
+          4,
+          3,
+          "H"
+        ],
+        [
+          3,
+          7,
+          2,
+          "V"
+        ],
+        [
+          1,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-141",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          9,
+          5,
+          "V"
+        ],
+        [
+          0,
+          5,
+          4,
+          "V"
+        ],
+        [
+          1,
+          8,
+          3,
+          "V"
+        ],
+        [
+          7,
+          1,
+          2,
+          "H"
+        ],
+        [
+          1,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-142",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          1,
+          2,
+          5,
+          "V"
+        ],
+        [
+          0,
+          6,
+          4,
+          "V"
+        ],
+        [
+          1,
+          3,
+          3,
+          "V"
+        ],
+        [
+          7,
+          9,
+          2,
+          "H"
+        ],
+        [
+          1,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-143",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          9,
+          5,
+          "V"
+        ],
+        [
+          4,
+          5,
+          4,
+          "V"
+        ],
+        [
+          4,
+          8,
+          3,
+          "V"
+        ],
+        [
+          0,
+          1,
+          2,
+          "H"
+        ],
+        [
+          6,
+          0,
+          2,
+          "H"
+        ]
+      ]
+    },
+    {
+      "id": "course-144",
+      "weight": 0.006944444444444444,
+      "robust_score": 0,
+      "expected_shots": 0,
+      "worst_policy_shots": 0,
+      "layout": [
+        [
+          2,
+          2,
+          5,
+          "V"
+        ],
+        [
+          4,
+          6,
+          4,
+          "V"
+        ],
+        [
+          4,
+          3,
+          3,
+          "V"
+        ],
+        [
+          0,
+          9,
+          2,
+          "H"
+        ],
+        [
+          6,
+          10,
+          2,
+          "H"
+        ]
+      ]
+    }
+  ]
+}
